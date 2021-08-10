@@ -3,7 +3,7 @@
 ## if no argument passed it will consider default index as 10 & will write the 10 entries
   if [[ -z $* ]] 
   then 
-	for i in $(seq 10); do
+	for i in {0..10}; do
 		echo "$RANDOM" >> inputFile 
 	done
 
@@ -21,4 +21,4 @@
 cat inputFile
 
 ## deleting the content of file for next fresh run
-#> inputFile
+#rm -rf inputFile
