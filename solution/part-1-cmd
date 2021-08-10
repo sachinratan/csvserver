@@ -1,0 +1,1 @@
+ sudo docker run -d --name csvserver -e CSVSERVER_BORDER=Orange -p 9300:9300 -v /home/sachsona83/csvserver/solution/inputFile:/csvserver/inputdata infracloudio/csvserver:latest
