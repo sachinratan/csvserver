@@ -21,4 +21,4 @@
 cat inputFile
 
 ## deleting the content of file for next fresh run
-#> inputFile
+rm -rf inputFile
