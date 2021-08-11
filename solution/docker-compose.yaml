@@ -1,0 +1,10 @@
+version: "3.9"  # optional since v1.27.0
+services:
+  csvserver:
+    environment:
+    - CSVSERVER_BORDER=Orange
+    image: infracloudio/csvserver:latest
+    ports:
+      - "9300:9300"
+    volumes:
+      - /home/sachsona83/csvserver/solution/inputFile:/csvserver/inputdata

@@ -17,6 +17,7 @@
 ## writing the index with comma separated random number
 
 	echo "$(awk '{printf "%s,\t%s\n",NR,$0}' inputFile)" > inputFile 
+#	echo "$(sed "=" inputFile | sed "N;s/\n/ /")" > inputFile
 ## Printing the inputFile output ##
 cat inputFile
 
