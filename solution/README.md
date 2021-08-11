@@ -57,3 +57,7 @@ sudo docker rm -f csvserver
 
 Step 9:
 sudo docker run -d --name csvserver -e CSVSERVER_BORDER=Orange -p 9300:9300 -v /home/sachsona83/csvserver/solution/inputFile:/csvserver/inputdata infracloudio/csvserver:latest
+
+###### USEFUL URL TO TEST #######
+CSVSEVER - http://35.197.56.241:9300/
+PROMETHEUS DASHBOARD - http://35.197.56.241:9090
