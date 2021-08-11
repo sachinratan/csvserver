@@ -8,3 +8,12 @@ services:
       - "9300:9300"
     volumes:
       - /home/sachsona83/csvserver/solution/inputFile:/csvserver/inputdata
+  
+  prometheus:
+    image: prom/prometheus:v2.22.0 
+    volumes:
+      - ./prometheus/:/etc/prometheus/
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+    ports:
+      - "9090:9090"
