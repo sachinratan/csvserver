@@ -1,5 +1,9 @@
 #!/bin/env/bash
 
+# empty the file content for fresh run
+
+cat /dev/null > inputFile
+
 ## if no argument passed it will consider default index as 10 & will write the 10 entries
   if [[ -z $* ]] 
   then 
@@ -17,9 +21,7 @@
 ## writing the index with comma separated random number
 
 	echo "$(awk '{printf "%s,\t%s\n",NR,$0}' inputFile)" > inputFile 
-#	echo "$(sed "=" inputFile | sed "N;s/\n/ /")" > inputFile
+
 ## Printing the inputFile output ##
 cat inputFile
 
-## deleting the content of file for next fresh run
-#rm -rf inputFile
